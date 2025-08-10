@@ -5,11 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Abilities extends Model
 {
     use HasFactory;
 
-    public $timestamps = false;
-    public $incrementing = true;
-    protected $primaryKey = 'id';
+    protected $table = 'abilities';
+    protected $guarded  = ['id','title'];
 }

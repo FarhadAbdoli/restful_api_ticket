@@ -5,11 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class TicketFiles extends Model
 {
     use HasFactory;
 
+    protected $primaryKey = 'id';
+    public $table = "ticket_files";
     public $timestamps = false;
     public $incrementing = true;
-    protected $primaryKey = 'id';
 }
